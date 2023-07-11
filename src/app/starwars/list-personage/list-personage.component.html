@@ -1,0 +1,26 @@
+
+<div class="container">
+    <div class="row">
+        <app-search-caracters class="center" ></app-search-caracters>
+        <div *ngFor="let caracter of starwars" class="col m4 s6" >
+            <div>
+                <td><div (click)="goToCaracters(caracter)" class="card horizontal">
+                    <img [src]="caracter.picture" width="150" height="150">
+                    <p>{{ caracter.name }} : <br/>
+                        <small>
+                            Année de naissance : {{ caracter.birth_year}} <br/> 
+                            <p>Taille: {{caracter.height}} <br/>  {{caracter.homeworld}} </p>
+                        </small>
+                    </p>
+                </div>
+            </td></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
